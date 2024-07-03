@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game-container">
+    <div id="instructions">
+        <h1>Card Battle Game</h1>
+        <p>Welcome to the Card Battle Game! Here are the basic rules:</p>
+        <ul>
+            <li>Each player draws 5 cards from a deck of cards.</li>
+            <li>Each card has an attack and health value, and a special suit effect.</li>
+            <li>During each turn, both players select one card to battle.</li>
+            <li>The card with higher attack value reduces the opponent's card health.</li>
+            <li>If a card's health drops to zero or below, it is removed from play.</li>
+            <li>Special suit effects:
+                <ul>
+                    <li>Spade: Counterattack - Deals half of its attack as damage back to the attacker.</li>
+                    <li>Heart: Lifesteal - Heals for half of its attack when it deals damage.</li>
+                    <li>Diamond: Shield - Gains shield equal to half of its attack each turn.</li>
+                    <li>Club: Poison - Deals half of its attack as poison damage over two turns.</li>
+                </ul>
+            </li>
+            <li>The game ends when one player has no more cards left.</li>
+        </ul>
+        <button id="start-game-button">OK</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
         <div id="player-hand">
             <h2>Player's Cards</h2>
             <div id="player-cards"></div>
@@ -19,6 +41,7 @@
         <div id="battle-log"></div>
         <button id="start-game">Start Game</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
