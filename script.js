@@ -120,7 +120,9 @@ function checkGameOver() {
 function startGame() {
     initializeHands();
     displayHands();
-    document.getElementById('actions').style.display = 'block';
+    document.getElementById('game-container').style.display = 'block';
+    document.getElementById('instructions').style.display = 'none';
 }
 
 document.getElementById('start-game').addEventListener('click', startGame);
+document.getElementById('start-game-button').addEventListener('click', startGame);
