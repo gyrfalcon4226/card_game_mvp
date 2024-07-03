@@ -8,38 +8,38 @@
 </head>
 <body>
     <div id="instructions">
-        <h1>Card Battle Game</h1>
-        <p>Welcome to the Card Battle Game! Here are the basic rules:</p>
+        <h1>卡牌對戰遊戲</h1>
+        <p>歡迎來到卡牌對戰遊戲！以下是基本規則：</p>
         <ul>
-            <li>Each player draws 5 cards from a deck of cards.</li>
-            <li>Each card has an attack and health value, and a special suit effect.</li>
-            <li>During each turn, both players select one card to battle.</li>
-            <li>The card with higher attack value reduces the opponent's card health.</li>
-            <li>If a card's health drops to zero or below, it is removed from play.</li>
-            <li>Special suit effects:
+            <li>每位玩家從牌組中抽取5張牌。</li>
+            <li>每張卡牌具有攻擊力和血量，以及一個特殊的花色效果。</li>
+            <li>每回合雙方選擇一張卡牌進行對戰。</li>
+            <li>攻擊力較高的卡牌會減少對方卡牌的血量。</li>
+            <li>如果卡牌的血量降至零或以下，則該卡牌將被移出遊戲。</li>
+            <li>特殊的花色效果：
                 <ul>
-                    <li>Spade: Counterattack - Deals half of its attack as damage back to the attacker.</li>
-                    <li>Heart: Lifesteal - Heals for half of its attack when it deals damage.</li>
-                    <li>Diamond: Shield - Gains shield equal to half of its attack each turn.</li>
-                    <li>Club: Poison - Deals half of its attack as poison damage over two turns.</li>
+                    <li>黑桃：反擊 - 對攻擊者造成一半攻擊力的傷害。</li>
+                    <li>紅心：吸血 - 攻擊時恢復一半攻擊力的血量。</li>
+                    <li>鑽石：護盾 - 每回合獲得等同於一半攻擊力的護盾。</li>
+                    <li>梅花：毒素 - 對對方造成一半攻擊力的持續傷害。</li>
                 </ul>
             </li>
-            <li>The game ends when one player has no more cards left.</li>
+            <li>當一方沒有卡牌時，遊戲結束。</li>
         </ul>
-        <button id="start-game-button">OK</button>
+        <button id="start-game-button">確定</button>
     </div>
 
     <div id="game-container" style="display: none;">
         <div id="player-hand">
-            <h2>Player's Cards</h2>
+            <h2>玩家的卡牌</h2>
             <div id="player-cards"></div>
         </div>
         <div id="computer-hand">
-            <h2>Computer's Cards</h2>
+            <h2>電腦的卡牌</h2>
             <div id="computer-cards"></div>
         </div>
         <div id="battle-log"></div>
-        <button id="start-game">Start Game</button>
+        <button id="start-game">開始遊戲</button>
     </div>
 
     <script src="script.js"></script>
