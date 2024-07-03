@@ -111,9 +111,9 @@ function battleRound() {
 
 function checkGameOver() {
     if (playerHand.length === 0) {
-        alert("Game Over! The computer wins.");
+        alert("遊戲結束！電腦獲勝。");
     } else if (computerHand.length === 0) {
-        alert("Congratulations! You defeated the computer.");
+        alert("恭喜！你擊敗了電腦。");
     }
 }
 
